@@ -12,27 +12,27 @@ declare( strict_types = 1 );
 
 namespace Gamajo\PluginSlug;
 
-$plugin_slug_plugin = [
+$plugin_slug_plugin = array(
 	'textdomain'    => 'easy-ai',
 	'languages_dir' => 'languages',
-];
+);
 
-$plugin_slug_settings = [
-	'submenu_pages' => [
-		[
+$plugin_slug_settings = array(
+	'submenu_pages' => array(
+		array(
 			'parent_slug'  => 'options-general.php',
 			'page_title'   => __( 'Easy AI Settings', 'easy-ai' ),
 			'menu_title'   => __( 'Easy AI', 'easy-ai' ),
 			'capability'   => 'manage_options',
 			'menu_slug'    => 'easy-ai',
 			'view'         => PLUGIN_SLUG_DIR . 'views/admin-page.php',
-			'dependencies' => [
-				'styles'   => [],
-				'scripts'  => [
-					[
+			'dependencies' => array(
+				'styles'   => array(),
+				'scripts'  => array(
+					array(
 						'handle'    => 'easy-ai-js',
 						'src'       => PLUGIN_SLUG_URL . 'js/admin-page.js',
-						'deps'      => [ 'jquery' ],
+						'deps'      => array( 'jquery' ),
 						'ver'       => '1.2.3',
 						'in_footer' => true,
 						'is_needed' => function ( $context ): bool {
@@ -42,49 +42,49 @@ $plugin_slug_settings = [
 
 							return true;
 						},
-						'localize'  => [
+						'localize'  => array(
 							'name' => 'pluginSlugI18n',
 							'data' => function ( $context ): array {
-								return [
+								return array(
 									'test_localize_data' => 'test_localize_value',
 									'context'            => $context,
-								];
+								);
 							},
-						],
-					],
-				],
-				'handlers' => [
+						),
+					),
+				),
+				'handlers' => array(
 					'scripts' => 'BrightNucleus\Dependency\ScriptHandler',
 					'styles'  => 'BrightNucleus\Dependency\StyleHandler',
-				],
-			],
-		],
-	],
-	'settings'      => [
-		'setting1' => [
+				),
+			),
+		),
+	),
+	'settings'      => array(
+		'setting1' => array(
 			'option_group'      => 'pluginslug',
 			'sanitize_callback' => null,
-			'sections'          => [
-				'section1' => [
+			'sections'          => array(
+				'section1' => array(
 					'title'  => __( 'My Section Title', 'easy-ai' ),
 					'view'   => PLUGIN_SLUG_DIR . 'views/section1.php',
-					'fields' => [
-						'field1' => [
+					'fields' => array(
+						'field1' => array(
 							'title' => __( 'My Field Title', 'easy-ai' ),
 							'view'  => PLUGIN_SLUG_DIR . 'views/field1.php',
-						],
-					],
-				],
-			],
-		],
-	],
-];
+						),
+					),
+				),
+			),
+		),
+	),
+);
 
-return [
-	'Gamajo' => [
-		'PluginSlug' => [
+return array(
+	'Gamajo' => array(
+		'PluginSlug' => array(
 			'Plugin'   => $plugin_slug_plugin,
 			'Settings' => $plugin_slug_settings,
-		],
-	],
-];
+		),
+	),
+);

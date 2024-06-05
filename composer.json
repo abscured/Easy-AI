@@ -67,6 +67,8 @@
 			"@psalm"
 		],
 		"phpcs": "phpcs && phpcs ./easy-ai.php -sp --standard=PHPCompatibility --runtime-set testVersion 5.6",
+		"phpcs-test": "php ./vendor/squizlabs/php_codesniffer/bin/phpcs --report=summary",
+		"phpcs-beautifier-and-fixer": "php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --report=summary",		
 	  	"psalm": "./vendor/bin/psalm",
 		"test": [
 			"@lint",

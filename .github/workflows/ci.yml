@@ -102,7 +102,7 @@ jobs:
         run: |
           composer install --prefer-dist --no-progress --no-suggest
           composer require pcov/clobber --dev
-          vendor/bin/pcov clobber
+          vendor/bin/pcov clobber .
         # See see https://dev.to/swashata/setup-php-pcov-for-5-times-faster-phpunit-code-coverage-3d9c
 
       - name: Setup Problem Matchers for PHPUnit

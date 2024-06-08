@@ -10,7 +10,7 @@
 
 declare( strict_types = 1 );
 
-namespace Gamajo\PluginSlug\Tests\Integration;
+namespace Easy_AI\Tests\Integration;
 
 use Gamajo\PluginSlug\Foo as Testee;
 use WP_UnitTestCase;

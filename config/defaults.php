@@ -10,14 +10,14 @@
 
 declare( strict_types = 1 );
 
-namespace Gamajo\PluginSlug;
+namespace Easy_AI;
 
-$plugin_slug_plugin = array(
+$easy_ai_plugin = array(
 	'textdomain'    => 'easy-ai',
 	'languages_dir' => 'languages',
 );
 
-$plugin_slug_settings = array(
+$easy_ai_settings = array(
 	'submenu_pages' => array(
 		array(
 			'parent_slug'  => 'options-general.php',
@@ -25,13 +25,13 @@ $plugin_slug_settings = array(
 			'menu_title'   => __( 'Easy AI', 'easy-ai' ),
 			'capability'   => 'manage_options',
 			'menu_slug'    => 'easy-ai',
-			'view'         => PLUGIN_SLUG_DIR . 'views/admin-page.php',
+			'view'         => EASY_AI_DIR . 'views/admin-page.php',
 			'dependencies' => array(
 				'styles'   => array(),
 				'scripts'  => array(
 					array(
 						'handle'    => 'easy-ai-js',
-						'src'       => PLUGIN_SLUG_URL . 'js/admin-page.js',
+						'src'       => EASY_AI_URL . 'js/admin-page.js',
 						'deps'      => array( 'jquery' ),
 						'ver'       => '1.2.3',
 						'in_footer' => true,
@@ -67,11 +67,11 @@ $plugin_slug_settings = array(
 			'sections'          => array(
 				'section1' => array(
 					'title'  => __( 'My Section Title', 'easy-ai' ),
-					'view'   => PLUGIN_SLUG_DIR . 'views/section1.php',
+					'view'   => EASY_AI_DIR . 'views/section1.php',
 					'fields' => array(
 						'field1' => array(
 							'title' => __( 'My Field Title', 'easy-ai' ),
-							'view'  => PLUGIN_SLUG_DIR . 'views/field1.php',
+							'view'  => EASY_AI_DIR . 'views/field1.php',
 						),
 					),
 				),
@@ -83,8 +83,8 @@ $plugin_slug_settings = array(
 return array(
 	'Gamajo' => array(
 		'PluginSlug' => array(
-			'Plugin'   => $plugin_slug_plugin,
-			'Settings' => $plugin_slug_settings,
+			'Plugin'   => $easy_ai_plugin,
+			'Settings' => $easy_ai_settings,
 		),
 	),
 );

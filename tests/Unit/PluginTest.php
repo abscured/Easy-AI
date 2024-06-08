@@ -10,7 +10,7 @@
 
 declare( strict_types = 1 );
 
-namespace Gamajo\PluginSlug\Tests\Unit;
+namespace Easy_AI\Tests\Unit;
 
 use Brain\Monkey\Functions;
 use BrightNucleus\Config\ConfigFactory;

@@ -10,7 +10,7 @@
 
 declare( strict_types = 1 );
 
-namespace Gamajo\PluginSlug\Tests;
+namespace Easy_AI\Tests;
 
 use Brain\Monkey;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;

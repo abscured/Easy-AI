@@ -10,7 +10,7 @@
 
 declare( strict_types = 1 );
 
-namespace Gamajo\PluginSlug;
+namespace Easy_AI;
 
 /**
  * Foo class.

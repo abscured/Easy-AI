@@ -12,7 +12,7 @@
 
 declare( strict_types = 1 );
 
-namespace Gamajo\PluginSlug;
+namespace Easy_AI;
 
 use BrightNucleus\Config\ConfigFactory;
 
@@ -21,12 +21,12 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if ( ! defined( 'PLUGIN_SLUG_DIR' ) ) {
-	define( 'PLUGIN_SLUG_DIR', plugin_dir_path( __FILE__ ) );
+if ( ! defined( 'EASY_AI_DIR' ) ) {
+	define( 'EASY_AI_DIR', plugin_dir_path( __FILE__ ) );
 }
 
-if ( ! defined( 'PLUGIN_SLUG_URL' ) ) {
-	define( 'PLUGIN_SLUG_URL', plugin_dir_url( __FILE__ ) );
+if ( ! defined( 'EASY_AI_URL' ) ) {
+	define( 'EASY_AI_URL', plugin_dir_url( __FILE__ ) );
 }
 
 // Load Composer autoloader.
@@ -35,5 +35,5 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 }
 
 // Initialize the plugin.
-$GLOBALS['plugin_slug'] = new Plugin( ConfigFactory::create( __DIR__ . '/config/defaults.php' )->getSubConfig( 'Gamajo\PluginSlug' ) );
-$GLOBALS['plugin_slug']->run();
+$GLOBALS['easy_ai'] = new Plugin( ConfigFactory::create( __DIR__ . '/config/defaults.php' )->getSubConfig( 'Gamajo\PluginSlug' ) );
+$GLOBALS['easy_ai']->run();

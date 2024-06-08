@@ -30,29 +30,29 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 if ( version_compare( PHP_VERSION, '7.4', '<' ) ) {
-	add_action( 'plugins_loaded', 'plugin_slug_init_deactivation' );
+	add_action( 'plugins_loaded', 'easy_ai_init_deactivation' );
 
 	/**
 	 * Initialise deactivation functions.
 	 */
-	function plugin_slug_init_deactivation() {
+	function easy_ai_init_deactivation() {
 		if ( current_user_can( 'activate_plugins' ) ) {
-			add_action( 'admin_init', 'plugin_slug_deactivate' );
-			add_action( 'admin_notices', 'plugin_slug_deactivation_notice' );
+			add_action( 'admin_init', 'easy_ai_deactivate' );
+			add_action( 'admin_notices', 'easy_ai_deactivation_notice' );
 		}
 	}
 
 	/**
 	 * Deactivate the plugin.
 	 */
-	function plugin_slug_deactivate() {
+	function easy_ai_deactivate() {
 		deactivate_plugins( plugin_basename( __FILE__ ) );
 	}
 
 	/**
 	 * Show deactivation admin notice.
 	 */
-	function plugin_slug_deactivation_notice() {
+	function easy_ai_deactivation_notice() {
 		$notice = sprintf(
 			// Translators: 1: Required PHP version, 2: Current PHP version.
 			'<strong>Easy AI</strong> requires PHP %1$s to run. This site uses %2$s, so the plugin has been <strong>deactivated</strong>.',

@@ -2,17 +2,16 @@
 /**
  * Integration tests for Foo
  *
- * @package      Gamajo\PluginSlug\Tests\Integration
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Biha\Easy_AI\Tests\Integration
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
 declare( strict_types = 1 );
 
-namespace Gamajo\PluginSlug\Tests\Integration;
+namespace Biha\Easy_AI\Tests\Integration;
 
-use Gamajo\PluginSlug\Foo as Testee;
+use Biha\Easy_AI\Foo as Testee;
 use WP_UnitTestCase;
 
 /**

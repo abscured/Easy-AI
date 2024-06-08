@@ -4,18 +4,17 @@
  *
  * This file should only use syntax available in PHP 5.6 or later.
  *
- * @package      Gamajo\PluginSlug
- * @author       Gary Jones
- * @copyright    2020 Gamajo
+ * @package      Biha\Easy_AI
+ * @author       Kasra Sabet
  * @license      GPL-2.0-or-later
  *
  * @wordpress-plugin
  * Plugin Name:       Easy AI
- * Plugin URI:        https://github.com/garyjones/...
+ * Plugin URI:        https://github.com/kasra-s/Easy-AI
  * Description:       ...
  * Version:           0.1.0
- * Author:            Gary Jones
- * Author URI:        https://garyjones.io
+ * Author:            Kasra Sabet, Alireza Arjvand
+ * Author URI:        https://github.com/kasra-s
  * Text Domain:       easy-ai
  * License:           GPL-2.0-or-later
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -30,29 +29,29 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 if ( version_compare( PHP_VERSION, '7.4', '<' ) ) {
-	add_action( 'plugins_loaded', 'plugin_slug_init_deactivation' );
+	add_action( 'plugins_loaded', 'easy_ai_init_deactivation' );
 
 	/**
 	 * Initialise deactivation functions.
 	 */
-	function plugin_slug_init_deactivation() {
+	function easy_ai_init_deactivation() {
 		if ( current_user_can( 'activate_plugins' ) ) {
-			add_action( 'admin_init', 'plugin_slug_deactivate' );
-			add_action( 'admin_notices', 'plugin_slug_deactivation_notice' );
+			add_action( 'admin_init', 'easy_ai_deactivate' );
+			add_action( 'admin_notices', 'easy_ai_deactivation_notice' );
 		}
 	}
 
 	/**
 	 * Deactivate the plugin.
 	 */
-	function plugin_slug_deactivate() {
+	function easy_ai_deactivate() {
 		deactivate_plugins( plugin_basename( __FILE__ ) );
 	}
 
 	/**
 	 * Show deactivation admin notice.
 	 */
-	function plugin_slug_deactivation_notice() {
+	function easy_ai_deactivation_notice() {
 		$notice = sprintf(
 			// Translators: 1: Required PHP version, 2: Current PHP version.
 			'<strong>Easy AI</strong> requires PHP %1$s to run. This site uses %2$s, so the plugin has been <strong>deactivated</strong>.',

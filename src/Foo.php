@@ -2,15 +2,14 @@
 /**
  * Foo class, does foo
  *
- * @package      Gamajo\PluginSlug
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Biha\Easy_AI
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
 declare( strict_types = 1 );
 
-namespace Gamajo\PluginSlug;
+namespace Biha\Easy_AI;
 
 /**
  * Foo class.

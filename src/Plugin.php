@@ -2,15 +2,14 @@
 /**
  * Main plugin file
  *
- * @package      Gamajo\PluginSlug
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Biha\Easy_AI
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
 declare( strict_types = 1 );
 
-namespace Gamajo\PluginSlug;
+namespace Biha\Easy_AI;
 
 use BrightNucleus\Config\ConfigInterface;
 use BrightNucleus\Config\ConfigTrait;
@@ -22,8 +21,8 @@ use BrightNucleus\Settings\Settings;
  *
  * @since   0.1.0
  *
- * @package Gamajo\PluginSlug
- * @author  Gary Jones
+ * @package Biha\Easy_AI
+ * @author  Kasra Sabet
  */
 class Plugin {
 
@@ -60,7 +59,7 @@ class Plugin {
 	 * @since 0.1.0
 	 */
 	public function run(): void {
-		\add_action( 'plugins_loaded', [ $this, 'load_textdomain' ] );
+		\add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 	}
 
 	/**

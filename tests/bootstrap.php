@@ -2,29 +2,28 @@
 /**
  * PHPUnit bootstrap
  *
- * @package      Gamajo\PluginSlug\Tests
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Biha\Easy_AI\Tests
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
 declare( strict_types = 1 );
 
-namespace Gamajo\PluginSlug\Tests;
+namespace Biha\Easy_AI\Tests;
 
 // Check for a `--testsuite integration` arg when calling phpunit, and use it to conditionally load up WordPress.
-$plugin_slug_argv = $GLOBALS['argv'];
-$plugin_slug_key  = (int) array_search( '--testsuite', $plugin_slug_argv, true );
+$easy_ai_argv = $GLOBALS['argv'];
+$easy_ai_key  = (int) array_search( '--testsuite', $easy_ai_argv, true );
 
-if ( $plugin_slug_key && 'integration' === $plugin_slug_argv[ $plugin_slug_key + 1 ] ) {
-	$plugin_slug_tests_dir = getenv( 'WP_TESTS_DIR' );
+if ( $easy_ai_key && 'integration' === $easy_ai_argv[ $easy_ai_key + 1 ] ) {
+	$easy_ai_tests_dir = getenv( 'WP_TESTS_DIR' );
 
-	if ( ! $plugin_slug_tests_dir ) {
-		$plugin_slug_tests_dir = '/tmp/wordpress-tests-lib';
+	if ( ! $easy_ai_tests_dir ) {
+		$easy_ai_tests_dir = '/tmp/wordpress-tests-lib';
 	}
 
 	// Give access to tests_add_filter() function.
-	require_once $plugin_slug_tests_dir . '/includes/functions.php';
+	require_once $easy_ai_tests_dir . '/includes/functions.php';
 
 	/**
 	 * Manually load the plugin being tested.
@@ -37,5 +36,5 @@ if ( $plugin_slug_key && 'integration' === $plugin_slug_argv[ $plugin_slug_key +
 	);
 
 	// Start up the WP testing environment.
-	require $plugin_slug_tests_dir . '/includes/bootstrap.php';
+	require $easy_ai_tests_dir . '/includes/bootstrap.php';
 }

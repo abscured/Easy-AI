@@ -2,18 +2,17 @@
 /**
  * Unit tests for Foo
  *
- * @package      Gamajo\PluginSlug\Tests\Unit
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Biha\Easy_AI\Tests\Unit
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
 declare( strict_types = 1 );
 
-namespace Gamajo\PluginSlug\Tests\Unit;
+namespace Biha\Easy_AI\Tests\Unit;
 
-use Gamajo\PluginSlug\Foo as Testee;
-use Gamajo\PluginSlug\Tests\TestCase;
+use Biha\Easy_AI\Foo as Testee;
+use Biha\Easy_AI\Tests\TestCase;
 
 /**
  * Foo test case.

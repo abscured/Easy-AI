@@ -41,11 +41,11 @@
 	<rule ref="PHPCompatibility" />
 
 	<rule ref="WordPress.Files.FileName.InvalidClassFileName">
-	<exclude-pattern>/src/*</exclude-pattern>
+		<exclude-pattern>/src/*</exclude-pattern>
 	</rule>
 
 	<rule ref="WordPress.Files.FileName.NotHyphenatedLowercase">
-		<exclude-pattern>src/</exclude-pattern>
+		<exclude-pattern>/src/*</exclude-pattern>
 	</rule>
 
 </ruleset>

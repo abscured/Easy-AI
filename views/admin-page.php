@@ -2,9 +2,8 @@
 /**
  * Admin page view
  *
- * @package      Gamajo\PluginSlug
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Easy_AI
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 

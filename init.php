@@ -4,8 +4,8 @@
  *
  * This file can use syntax from the required level of PHP or later.
  *
- * @package      Gamajo\PluginSlug
- * @author       Gary Jones
+ * @package      Easy_AI
+ * @author       Kasra Sabet
  * @copyright    2020 Gary Jones
  * @license      GPL-2.0-or-later
  */
@@ -35,5 +35,5 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 }
 
 // Initialize the plugin.
-$GLOBALS['easy_ai'] = new Plugin( ConfigFactory::create( __DIR__ . '/config/defaults.php' )->getSubConfig( 'Gamajo\PluginSlug' ) );
+$GLOBALS['easy_ai'] = new Plugin( ConfigFactory::create( __DIR__ . '/config/defaults.php' )->getSubConfig( 'Easy_AI' ) );
 $GLOBALS['easy_ai']->run();

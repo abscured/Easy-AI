@@ -2,9 +2,8 @@
 /**
  * Main plugin file
  *
- * @package      Gamajo\PluginSlug
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Easy_AI
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
@@ -22,8 +21,8 @@ use BrightNucleus\Settings\Settings;
  *
  * @since   0.1.0
  *
- * @package Gamajo\PluginSlug
- * @author  Gary Jones
+ * @package Easy_AI
+ * @author  Kasra Sabet
  */
 class Plugin {
 

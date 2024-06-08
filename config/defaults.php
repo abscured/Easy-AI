@@ -2,9 +2,8 @@
 /**
  * Plugin configuration file
  *
- * @package      Gamajo\PluginSlug
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Easy_AI
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
@@ -81,10 +80,8 @@ $easy_ai_settings = array(
 );
 
 return array(
-	'Gamajo' => array(
-		'PluginSlug' => array(
-			'Plugin'   => $easy_ai_plugin,
-			'Settings' => $easy_ai_settings,
-		),
+	'Easy_AI' => array(
+		'Plugin'   => $easy_ai_plugin,
+		'Settings' => $easy_ai_settings,
 	),
 );

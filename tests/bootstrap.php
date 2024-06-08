@@ -2,9 +2,8 @@
 /**
  * PHPUnit bootstrap
  *
- * @package      Gamajo\PluginSlug\Tests
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Easy_AI\Tests
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 

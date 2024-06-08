@@ -4,18 +4,17 @@
  *
  * This file should only use syntax available in PHP 5.6 or later.
  *
- * @package      Gamajo\PluginSlug
- * @author       Gary Jones
- * @copyright    2020 Gamajo
+ * @package      Easy_AI
+ * @author       Kasra Sabet
  * @license      GPL-2.0-or-later
  *
  * @wordpress-plugin
  * Plugin Name:       Easy AI
- * Plugin URI:        https://github.com/garyjones/...
+ * Plugin URI:        https://github.com/kasra-s/Easy-AI
  * Description:       ...
  * Version:           0.1.0
- * Author:            Gary Jones
- * Author URI:        https://garyjones.io
+ * Author:            Kasra Sabet, Alireza Arjvand
+ * Author URI:        https://github.com/kasra-s
  * Text Domain:       easy-ai
  * License:           GPL-2.0-or-later
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt

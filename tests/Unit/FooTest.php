@@ -2,9 +2,8 @@
 /**
  * Unit tests for Foo
  *
- * @package      Gamajo\PluginSlug\Tests\Unit
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Easy_AI\Tests\Unit
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
@@ -12,8 +11,8 @@ declare( strict_types = 1 );
 
 namespace Easy_AI\Tests\Unit;
 
-use Gamajo\PluginSlug\Foo as Testee;
-use Gamajo\PluginSlug\Tests\TestCase;
+use Easy_AI\Foo as Testee;
+use Easy_AI\Tests\TestCase;
 
 /**
  * Foo test case.

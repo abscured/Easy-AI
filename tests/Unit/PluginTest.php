@@ -2,9 +2,8 @@
 /**
  * Unit tests for Plugin
  *
- * @package      Gamajo\PluginSlug\Tests\Unit
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Easy_AI\Tests\Unit
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
@@ -15,8 +14,8 @@ namespace Easy_AI\Tests\Unit;
 use Brain\Monkey\Functions;
 use BrightNucleus\Config\ConfigFactory;
 use BrightNucleus\Config\ConfigInterface;
-use Gamajo\PluginSlug\Plugin as Testee;
-use Gamajo\PluginSlug\Tests\TestCase;
+use Easy_AI\Plugin as Testee;
+use Easy_AI\Tests\TestCase;
 
 /**
  * Foo test case.

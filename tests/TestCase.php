@@ -2,9 +2,8 @@
 /**
  * Base unit test case
  *
- * @package      Gamajo\PluginSlug\Tests
- * @author       Gary Jones
- * @copyright    2017 Gamajo
+ * @package      Easy_AI\Tests
+ * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
@@ -19,7 +18,7 @@ use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 /**
  * Abstract base class for all test case implementations.
  *
- * @package Gamajo\PluginSlug\Tests
+ * @package Easy_AI\Tests
  * @since   1.0.0
  */
 abstract class TestCase extends PHPUnitTestCase {

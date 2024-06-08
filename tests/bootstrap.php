@@ -2,14 +2,14 @@
 /**
  * PHPUnit bootstrap
  *
- * @package      Easy_AI\Tests
+ * @package      Biha\Easy_AI\Tests
  * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
 declare( strict_types = 1 );
 
-namespace Easy_AI\Tests;
+namespace Biha\Easy_AI\Tests;
 
 // Check for a `--testsuite integration` arg when calling phpunit, and use it to conditionally load up WordPress.
 $easy_ai_argv = $GLOBALS['argv'];

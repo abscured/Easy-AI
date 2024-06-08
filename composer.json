@@ -1,4 +1,5 @@
 {
+	"name": "biha/easy-ai",
 	"type": "wordpress-plugin",
 	"description": "Test plugin",
 	"keywords": [
@@ -46,12 +47,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Easy_AI\\": "src/"
+			"Biha\\Easy_AI\\": "src/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Easy_AI\\Tests\\": "tests/"
+			"Biha\\Easy_AI\\Tests\\": "tests/"
 		}
 	},
 	"minimum-stability": "dev",
@@ -87,7 +88,7 @@
 		"unit": "./vendor/bin/phpunit --testsuite unit"
 	},
 	"support": {
-		"issues": "https://github.com/GaryJones/easy-ai/issues",
-		"source": "https://github.com/GaryJones/easy-ai"
+		"issues": "https://github.com/kasra-s/easy-ai/issues",
+		"source": "https://github.com/kasra-s/easy-ai"
 	}
 }

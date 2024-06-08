@@ -2,14 +2,14 @@
 /**
  * Plugin configuration file
  *
- * @package      Easy_AI
+ * @package      Biha\Easy_AI
  * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
 declare( strict_types = 1 );
 
-namespace Easy_AI;
+namespace Biha\Easy_AI;
 
 $easy_ai_plugin = array(
 	'textdomain'    => 'easy-ai',
@@ -80,8 +80,10 @@ $easy_ai_settings = array(
 );
 
 return array(
-	'Easy_AI' => array(
-		'Plugin'   => $easy_ai_plugin,
-		'Settings' => $easy_ai_settings,
+	'Biha' => array(
+		'Easy_AI' => array(
+			'Plugin'   => $easy_ai_plugin,
+			'Settings' => $easy_ai_settings,
+		),
 	),
 );

@@ -2,14 +2,14 @@
 /**
  * Main plugin file
  *
- * @package      Easy_AI
+ * @package      Biha\Easy_AI
  * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
 declare( strict_types = 1 );
 
-namespace Easy_AI;
+namespace Biha\Easy_AI;
 
 use BrightNucleus\Config\ConfigInterface;
 use BrightNucleus\Config\ConfigTrait;
@@ -21,7 +21,7 @@ use BrightNucleus\Settings\Settings;
  *
  * @since   0.1.0
  *
- * @package Easy_AI
+ * @package Biha\Easy_AI
  * @author  Kasra Sabet
  */
 class Plugin {

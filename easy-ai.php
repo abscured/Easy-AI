@@ -4,7 +4,7 @@
  *
  * This file should only use syntax available in PHP 5.6 or later.
  *
- * @package      Easy_AI
+ * @package      Biha\Easy_AI
  * @author       Kasra Sabet
  * @license      GPL-2.0-or-later
  *

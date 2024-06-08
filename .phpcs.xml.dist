@@ -34,7 +34,10 @@
 
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
-			<property name="prefixes" type="array" value="Easy_AI" />
+			<property name="prefixes" type="array">
+				<element value="Easy_AI" />
+				<element value="Biha\Easy_AI" />
+			</property>
 		</properties>
 	</rule>
 

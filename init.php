@@ -4,7 +4,7 @@
  *
  * This file can use syntax from the required level of PHP or later.
  *
- * @package      Easy_AI
+ * @package      Biha\Easy_AI
  * @author       Kasra Sabet
  * @copyright    2020 Gary Jones
  * @license      GPL-2.0-or-later
@@ -12,7 +12,7 @@
 
 declare( strict_types = 1 );
 
-namespace Easy_AI;
+namespace Biha\Easy_AI;
 
 use BrightNucleus\Config\ConfigFactory;
 
@@ -35,5 +35,5 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 }
 
 // Initialize the plugin.
-$GLOBALS['easy_ai'] = new Plugin( ConfigFactory::create( __DIR__ . '/config/defaults.php' )->getSubConfig( 'Easy_AI' ) );
+$GLOBALS['easy_ai'] = new Plugin( ConfigFactory::create( __DIR__ . '/config/defaults.php' )->getSubConfig( 'Biha\Easy_AI' ) );
 $GLOBALS['easy_ai']->run();

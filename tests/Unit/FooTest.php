@@ -2,17 +2,17 @@
 /**
  * Unit tests for Foo
  *
- * @package      Easy_AI\Tests\Unit
+ * @package      Biha\Easy_AI\Tests\Unit
  * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
 declare( strict_types = 1 );
 
-namespace Easy_AI\Tests\Unit;
+namespace Biha\Easy_AI\Tests\Unit;
 
-use Easy_AI\Foo as Testee;
-use Easy_AI\Tests\TestCase;
+use Biha\Easy_AI\Foo as Testee;
+use Biha\Easy_AI\Tests\TestCase;
 
 /**
  * Foo test case.

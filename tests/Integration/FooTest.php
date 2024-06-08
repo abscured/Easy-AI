@@ -2,16 +2,16 @@
 /**
  * Integration tests for Foo
  *
- * @package      Easy_AI\Tests\Integration
+ * @package      Biha\Easy_AI\Tests\Integration
  * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
 declare( strict_types = 1 );
 
-namespace Easy_AI\Tests\Integration;
+namespace Biha\Easy_AI\Tests\Integration;
 
-use Easy_AI\Foo as Testee;
+use Biha\Easy_AI\Foo as Testee;
 use WP_UnitTestCase;
 
 /**

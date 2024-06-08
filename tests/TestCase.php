@@ -2,14 +2,14 @@
 /**
  * Base unit test case
  *
- * @package      Easy_AI\Tests
+ * @package      Biha\Easy_AI\Tests
  * @author       Kasra Sabet
  * @license      GPL-2.0+
  */
 
 declare( strict_types = 1 );
 
-namespace Easy_AI\Tests;
+namespace Biha\Easy_AI\Tests;
 
 use Brain\Monkey;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
@@ -18,7 +18,7 @@ use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 /**
  * Abstract base class for all test case implementations.
  *
- * @package Easy_AI\Tests
+ * @package Biha\Easy_AI\Tests
  * @since   1.0.0
  */
 abstract class TestCase extends PHPUnitTestCase {
